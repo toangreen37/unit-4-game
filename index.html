@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Crystal Game</title>
+</head>
+
+<body>
+    <!-- //Bootstrap jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4">Crystal Collector Game</h1>
+    </div>
+
+    <!-- Instructions for how to play the game-->
+    <div class="card-body">
+        <h4 class="card-title1">How to Play the Game</h4>
+        <p class="card-text">You will be given a target Score at the beginning of the game.</p>
+        <p class="card-text">Choosing one of the four crystal below will add a random amount of points.
+        </p>
+        <p class="card-text">You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random number.</p>
+        <p class="card-text">The value of the crystal is hidden from you until you click on it.</p>
+        <p class="card-text">Every new game, the crystal value will be a new one.</p>
+    </div>
+
+    <div class="card-deck">
+        <!-- Target score -->
+        <div class="card">
+            <div class="card-header2">Target Score</div>
+            <div class="card-body">
+                <h5 class="card-title" id="targetScore1">100</h5>
+            </div>
+        </div>
+
+        <!-- Your score -->
+        <div class="card">
+            <div class="card-header2">Your Score</div>
+            <div class="card-body">
+                <h5 class="card-title" id="yourScore1">0</h5>
+            </div>
+        </div>
+
+        <!-- Wins -->
+        <div class="card">
+            <div class="card-header2">Wins</div>
+            <div class="card-body">
+                <h5 class="card-title" id="wins1">0</h5>
+            </div>
+        </div>
+
+        <!-- Losses -->
+        <div class="card">
+            <div class="card-header2">Losses</div>
+            <div class="card-body">
+                <h5 class="card-title" id="losses1">0</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crystal Options and images -->
+    <hr>
+    <div class="card-header3">Crystal Options</div>
+    <hr>
+
+    <div class="row">
+        <img class="card-img" id="green" src="assets/images/greencrystal.jpg" alt="crystal">
+        <img class="card-img" id="black" src="assets/images/blackcrystal.jpg" alt="cystal">
+        <img class="card-img" id="yellow" src="assets/images/yellowcrystal.jpg" alt="crystal">
+        <img class="card-img" id="red" src="assets/images/redcrystal.jpg" alt="crystal">
+    </div>
+
+    <!-- jQuery, Popper.js,  Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to JS -->
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
